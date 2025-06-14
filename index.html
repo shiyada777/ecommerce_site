@@ -1,23 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hi this is shiva</h1>
-     <h1>hi git</h1>
+    <link rel="stylesheet" href="style.css" />
 
+    <!-- adding icons from google material icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
 
+  <body>
+    <header>
+      <div id="navigationBar">
+        <div id="logo">
+          <a href="index.html"> <span class="my">My</span><span>Buy</span> </a>
+        </div>
 
-     <h2>
-        This is me shiva the boss who is drinking coffee which is black in color
-     </h2>
+        <div id="middle">
+          <div id="upside">
+            <input
+              type="search"
+              placeholder="Search..."
+              name="Search"
+              id="SearchBar"
+            />
+          </div>
+          <div id="navigationLinks">
+            <a class="navLinks" href="index.html">Home</a>
+            <a class="navLinks" href="allitems.html">All items</a>
+            <a class="navLinks" href="contactus.html">Contact us</a>
+            <a class="navLinks" href="help.html">help</a>
+          </div>
+        </div>
 
-     <h3>hi this is shivakumar yadav in texas state of USA</h3>
-    <h2>This is dipen</h2>
-    <h3>This is done by Dipen</h3>
-    
-</body>
+        <div id="right">
+          <div id="upRightSide">
+            <button type="button" id="myItems" class="navbutton">
+              <span class="material-symbols-outlined"> local_mall </span>
+              <a href="myitems.html">My Items</a>
+            </button>
+            <button type="button" id="signIn" class="navbutton">
+              <span class="material-symbols-outlined"> account_circle </span>
+
+              <a href="signin.html">Sign in</a>
+            </button>
+          </div>
+
+          <div id="menu">
+            <button
+              id="darkModeButton"
+              class="navLinks navbutton"
+              type="button"
+            >
+              <span class="material-symbols-outlined"> dark_mode </span>
+              <!-- <span class="material-symbols-outlined"> light_mode </span> -->
+            </button>
+            <button
+              id="ShoppingCartButton"
+              class="navLinks navbutton"
+              type="button"
+            >
+              <a href="cart.html"
+                ><span class="material-symbols-outlined">
+                  shopping_cart
+                </span></a
+              >
+            </button>
+            <button id="menuButton" class="navLinks navbutton" type="button">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- <h1>This is the home page</h1> -->
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
 </html>

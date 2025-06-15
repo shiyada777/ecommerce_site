@@ -97,3 +97,38 @@
 #tshirt {}
 
 #pants {}
+
+#cart {
+    /* transform: scale(2); */
+    /* margin-top: 6rem; */
+    /* margin-left: 1rem; */
+    cursor: pointer;
+}
+
+ /* add to cart button  */
+.addtocart{
+    border-radius: 5px;
+    /* background: transparent; */
+    cursor: pointer;
+
+}
+#cart{
+    position: relative;
+      cursor: pointer;
+}
+#counter{
+    position:absolute;
+    font-size: 10px;
+    font-family:Poppins;
+    font-weight: 500;
+    background: 10px yellow;
+    border-radius:5px;
+    height: max-content;
+    width: max-content;
+    color: black;
+    right:114px;
+    top: 74px;
+    
+   
+}
+

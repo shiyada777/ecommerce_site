@@ -1,210 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="products.css" />
 
-    <!-- adding icons from google material icon -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="products.css" />
 
-  <body>
-    <header>
-      <div id="navigationBar">
-        <div id="logo">
-          <a href="index.html"> <span class="my">My</span><span>Buy</span> </a>
+  <!-- adding icons from google material icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+  <header>
+    <div id="navigationBar">
+      <div id="logo">
+        <a href="index.html"> <span class="my">My</span><span>Buy</span> </a>
+      </div>
+
+      <div id="middle">
+        <div id="upside">
+          <input type="search" placeholder="Search..." name="Search" id="SearchBar" />
         </div>
-
-        <div id="middle">
-          <div id="upside">
-            <input
-              type="search"
-              placeholder="Search..."
-              name="Search"
-              id="SearchBar"
-            />
-          </div>
-          <div id="navigationLinks">
-            <a class="navLinks" href="index.html">Home</a>
-            <a class="navLinks" href="allitems.html">All items</a>
-            <a class="navLinks" href="contactus.html">Contact us</a>
-            <a class="navLinks" href="help.html">help</a>
-          </div>
-        </div>
-
-        <div id="right">
-          <div id="upRightSide">
-            <button type="button" id="myItems" class="navbutton">
-              <span class="material-symbols-outlined"> local_mall </span>
-              <a href="myitems.html">My Items</a>
-            </button>
-            <button type="button" id="signIn" class="navbutton">
-              <span class="material-symbols-outlined"> account_circle </span>
-
-              <a href="signin.html">Sign in</a>
-            </button>
-          </div>
-
-          <div id="menu">
-            <button
-              id="darkModeButton"
-              class="navLinks navbutton"
-              type="button"
-            >
-              <span id="dark" class="material-symbols-outlined">
-                dark_mode
-              </span>
-              <span id="light" class="material-symbols-outlined">
-                light_mode
-              </span>
-            </button>
-
-            <button
-              id="ShoppingCartButton"
-              class="navLinks navbutton"
-              type="button"
-            >
-              <a href="cart.html"
-                ><span class="material-symbols-outlined">
-                  shopping_cart
-                </span></a
-              >
-            </button>
-            <button id="menuButton" class="navLinks navbutton" type="button">
-              <span class="material-symbols-outlined"> menu </span>
-            </button>
-          </div>
+        <div id="navigationLinks">
+          <a class="navLinks" href="index.html">Home</a>
+          <a class="navLinks" href="allitems.html">All items</a>
+          <a class="navLinks" href="contactus.html">Contact us</a>
+          <a class="navLinks" href="help.html">help</a>
         </div>
       </div>
-    </header>
 
-    <main>
-      <div id="container">
-        <div id="man">
-          <button id="leftArrow">
-            <span  class="material-symbols-outlined"> arrow_back_ios </span>
+      <div id="right">
+        <div id="upRightSide">
+          <button type="button" id="myItems" class="navbutton">
+            <span class="material-symbols-outlined"> local_mall </span>
+            <a href="myitems.html">My Items</a>
           </button>
-          <div id="shirt-section" class="clothes">
-            
-            <div id="row1" class="row">
-              <div id="shirt1" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/61Y2T2pe6gL._AC_UY1000_.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+          <button type="button" id="signIn" class="navbutton">
+            <span class="material-symbols-outlined"> account_circle </span>
 
-              <div id="shirt2" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/b209c05e517088a17d16f5401b6a616f.jpg"
-                  alt="shirt1"
-                />
-                <span>$36</span>
-                <button type="button">Add to cart</button>
-              </div>
+            <a href="signin.html">Sign in</a>
+          </button>
+        </div>
 
-              <div id="shirt3" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/istockphoto-488160041-612x612.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+        <div id="menu">
+          <button id="darkModeButton" class="navLinks navbutton" type="button">
+            <span id="dark" class="material-symbols-outlined">
+              dark_mode
+            </span>
+            <span id="light" class="material-symbols-outlined">
+              light_mode
+            </span>
+          </button>
 
-              <div id="shirt4" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/s-l1200.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+          <button id="ShoppingCartButton" class="navLinks navbutton" type="button">
+            <a href="cart.html"><span id="cart" class="material-symbols-outlined">
+                shopping_cart
+              </span>
+              <span id="counter">0</span>
+            </a>
+          </button>
+          <button id="menuButton" class="navLinks navbutton" type="button">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-              <div id="shirt5" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/s-l400.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+  <main>
+    <div id="container">
+      <div id="man">
+        <button id="leftArrow">
+          <span class="material-symbols-outlined"> arrow_back_ios </span>
+        </button>
+        <div id="shirt-section" class="clothes">
+          <div id="row1" class="row">
+            <div id="shirt1" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/61Y2T2pe6gL._AC_UY1000_.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
 
-              <div id="shirt5" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/s-l400.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+            <div id="shirt2" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/b209c05e517088a17d16f5401b6a616f.jpg" alt="shirt1" />
+              <span>$36</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
 
-              <div id="shirt5" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/s-l400.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+            <div id="shirt3" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/istockphoto-488160041-612x612.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
 
-              <div id="shirt5" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/s-l400.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+            <div id="shirt4" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/s-l1200.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
 
-              <div id="shirt5" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/s-l400.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+            <div id="shirt5" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/s-l400.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
 
-              <div id="shirt5" class="shirt-box">
-                <img
-                  class="shirt"
-                  src="photos/men/shirts/s-l400.jpg"
-                  alt="shirt1"
-                />
-                <span>$34</span>
-                <button type="button">Add to cart</button>
-              </div>
+            <div id="shirt5" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/s-l400.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
+
+            <div id="shirt5" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/s-l400.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
+
+            <div id="shirt5" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/s-l400.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
+
+            <div id="shirt5" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/s-l400.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
+            </div>
+
+            <div id="shirt5" class="shirt-box">
+              <img class="shirt" src="photos/men/shirts/s-l400.jpg" alt="shirt1" />
+              <span>$34</span>
+              <button type="button" class="addtocart">Add to cart</button>
             </div>
           </div>
-          <button id="rightArrow">
-            <span  class="material-symbols-outlined">
-arrow_forward_ios
-</span>
-          </button>
+        </div>
+        <button id="rightArrow">
+          <span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span>
+        </button>
 
         <div id="Women"></div>
         <div id="children"></div>
       </div>
-    </main>
-    <footer></footer>
-    <script src="script.js"></script>
-  </body>
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

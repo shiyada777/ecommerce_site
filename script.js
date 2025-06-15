@@ -1,6 +1,17 @@
+window.addEventListener('DOMContentLoaded',()=>{
+    left_Arrow.style.visibility='hidden';
+    right_Arrow.style.visibility=shirt_section.scrollWidth > shirt_section.clientWidth ?'visible':'hidden';
+});
+
+
 const darkModeButton = document.getElementById('darkModeButton');
 const Light = document.getElementById('light');
 const dark = document.getElementById('dark');
+const left_Arrow=document.getElementById('leftArrow');
+const right_Arrow=document.getElementById('rightArrow');
+const shirt_section= document.getElementById('shirt-section')
+const scrollAmount= 14000;
+
 
 //Dark mode toggle
 
@@ -19,4 +30,21 @@ darkModeButton.addEventListener('click', () => {
     }
 
 });
+
+//arrow button functionality
+
+right_Arrow.addEventListener('click',()=>{
+    shirt_section.scrollBy({left:scrollAmount,behavior:'smooth'})
+
+});
+left_Arrow.addEventListener('click',()=>{
+    shirt_section.scrollBy({left:-scrollAmount,behavior:'smooth'})
+
+});
+
+//show hide the button on scroll position
+shirt_section.addEventListener('scroll',()=>{
+    left_Arrow.style.visibility= shirt_section.scrollLeft > 1300 ? 'visible':'hidden';
+});
+
 

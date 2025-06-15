@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --cloth-height: 12rem;
+    --cloth-width: 10rem;
+    --cloth-box-height:
+
+}
+
+#container {}
+
+#man{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.clothes {}
+
+/* arrow button  */
+
+#leftArrow{
+
+ border-radius: 50%;
+    position: absolute;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    margin-left: 10px;
+    padding-left: 10px;
+
+
+}
+
+/* right arrow button  */
+#rightArrow{
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 10px;
+  
+
+}
+
+
+#shirt-section {
+    width: 100%;
+    overflow-x: auto;
+    white-space:nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+   padding:0 40px;
+
+}
+
+#shirt-section::-webkit-scrollbar{
+    display: none;
+}
+
+.row {
+    display: inline-flex;
+/* gap: 15px;   */
+   
+
+}
+
+.shirt-box {
+    margin: 3rem;
+    display: grid;
+    height: max-content;
+    width: max-content;
+
+}
+
+.shirt-box span {
+    padding: 1rem 1rem 1rem 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* color: green; */
+}
+
+.shirt-box button {
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.shirt {
+    height: var(--cloth-height);
+    width:max-content
+}
+
+
+#tshirt {}
+
+#pants {}

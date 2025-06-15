@@ -83,12 +83,20 @@ a:hover{
 }
 #darkModeButton{}
 
-.darkModeImg{
-
-}
-.lightModeImg{
+#light{
     display: none;
 }
+#dark{
+display: inline;
+}
+.darkMode{
+    color: white;
+    background: rgba(87, 81, 81, 0.668);
+}
+
+
+
+
 
     
 #ShoppingCartButton{

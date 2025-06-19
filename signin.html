@@ -9,13 +9,22 @@
 <body>
   
     <div class="signinPage">
-      <form action="">
+      <form action="" id="loginForm">
         <p>Sign in or create account</p>
         <label for="input" id="input">
           Enter mobile number or email
         </label>
-        <input type="text" id="contact" required>
-        <button>Continue</button>
+        <input type="text" id="contact" required placeholder="email or phone">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button type="submit">Sign In</button>
+        <p>or sign in with</p>
+        <div class="social-buttons">
+          <button id="googleSignIn">Google</button>
+          <button id="googleSignIn">Facebook</button>
+        </div>
       </form>
     </div>
 </body>

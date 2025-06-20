@@ -61,3 +61,7 @@ button{
 .optionalSignin{
     margin-top:10px;
 }
+
+input{
+    font-size: 1.05rem;
+}
